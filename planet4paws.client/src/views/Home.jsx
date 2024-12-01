@@ -14,7 +14,7 @@ import {
   Slide,
 } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import PetsIcon from "@mui/icons-material/Pets";
+
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import StarIcon from "@mui/icons-material/Star";
@@ -25,6 +25,7 @@ import "@fontsource/roboto";
 import { lightTheme, darkTheme } from '../components/theme/theme';
 import Navbar from '../components/home/Navbar';
 import HeroSection from '../components/home/HeroSection';
+import FeaturesSection from '../components/home/FeaturesSection';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -89,69 +90,7 @@ const Home = () => {
         <HeroSection inView={inView} darkMode={darkMode} />
 
         {/* Features Section */}
-        <Container sx={{ py: 6 }}>
-          <Typography variant="h4" align="center" sx={{ mb: 4, fontSize: "2rem" }}>
-            Какво предлагаме
-          </Typography>
-          <Grid2 container spacing={4} justifyContent="center" id="features">
-            {[
-              {
-                title: "Напомняния за хранене",
-                icon: <PetsIcon sx={{ fontSize: 50 }} />,
-                description:
-                  "Задавайте график и никога не забравяйте кога е време за хранене.",
-              },
-              {
-                title: "Полезни съвети за здраве",
-                icon: <PetsIcon sx={{ fontSize: 50 }} />,
-                description:
-                  "Научете как да поддържате вашия домашен любимец здрав и щастлив.",
-              },
-              {
-                title: "Управление на записи",
-                icon: <PetsIcon sx={{ fontSize: 50 }} />,
-                description:
-                  "Съхранявайте важна информация за посещения при ветеринар и ваксинации.",
-              },
-            ].map((feature, index) => (
-              <Grid2
-                key={index}
-                xs={12} sm={6} md={4}
-                sx={{
-                  display: "flex",
-                  justifyContent: "center",
-                  textAlign: "center",
-                }}
-              >
-                <Grow in={inView.features} timeout={(index + 1) * 500}>
-                  <Box
-                    sx={{
-                      p: 3,
-                      borderRadius: 2,
-                      boxShadow: 3,
-                      backgroundColor: "background.paper",
-                      width: "100%",
-                      display: "flex",
-                      flexDirection: "column",
-                      justifyContent: "center",
-                      textAlign: "center",
-                    }}
-                  >
-                    <IconButton color="primary" disableRipple>
-                      {feature.icon}
-                    </IconButton>
-                    <Typography variant="h6" sx={{ mt: 2, fontSize: "1.2rem" }}>
-                      {feature.title}
-                    </Typography>
-                    <Typography variant="body2" sx={{ mt: 1, fontSize: "1rem" }}>
-                      {feature.description}
-                    </Typography>
-                  </Box>
-                </Grow>
-              </Grid2>
-            ))}
-          </Grid2>
-        </Container>
+        <FeaturesSection inView={inView} darkMode={darkMode} />
 
         {/* Reviews Section */}
         <Box sx={{ py: 6, backgroundColor: darkMode ? "#1e1e1e" : "#f9f9f9" }} id="reviews">

@@ -23,6 +23,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "@fontsource/roboto";
 import { lightTheme, darkTheme } from '../components/theme/theme';
+import Navbar from '../components/home/Navbar';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -81,28 +82,7 @@ const Home = () => {
         }}
       >
         {/* Navbar */}
-        <AppBar position="static" color="primary">
-          <Toolbar>
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-            >
-              <PetsIcon />
-            </IconButton>
-            <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              Planet4Paws
-            </Typography>
-            <IconButton
-              color="inherit"
-              onClick={handleThemeToggle}
-              sx={{ ml: 2 }}
-            >
-              {darkMode ? <Brightness7Icon /> : <Brightness4Icon />}
-            </IconButton>
-          </Toolbar>
-        </AppBar>
+        <Navbar darkMode={darkMode} handleThemeToggle={handleThemeToggle} />
 
         {/* Hero Section with Animation */}
         <Box

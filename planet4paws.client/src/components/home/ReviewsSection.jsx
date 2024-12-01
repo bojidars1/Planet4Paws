@@ -4,7 +4,7 @@ import StarIcon from "@mui/icons-material/Star";
 
 const ReviewsSection = ({ inView, darkMode }) => {
     return (
-        <Box sx={{ py: 6, backgroundColor: darkMode ? "#1e1e1e" : "#f9f9f9" }} id="reviews">
+        <Box sx={{ mt: '2em', py: 6, backgroundColor: darkMode ? "#1e1e1e" : "#f9f9f9" }} id="reviews">
           <Container>
             <Typography variant="h4" align="center" sx={{ mb: 4, fontSize: "2rem" }}>
               Какво казват клиентите

@@ -13,6 +13,7 @@ const HeroSection = ({ inView, darkMode }) => {
         justifyContent: "space-between",
         py: 6,
         px: 3,
+        mb: 2,
         color: darkMode ? "#ffffff" : "#333333",
         background: darkMode
           ? "linear-gradient(135deg, #121212, #37474f, #1e1e1e)"

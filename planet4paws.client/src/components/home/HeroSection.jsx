@@ -1,6 +1,5 @@
 import React from "react";
 import { Box, Typography, Button, Fade } from "@mui/material";
-import PetsIcon from "@mui/icons-material/Pets";
 
 const HeroSection = ({ inView, darkMode }) => {
   return (
@@ -8,7 +7,7 @@ const HeroSection = ({ inView, darkMode }) => {
       id="hero"
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", md: "row" }, // Stack on small screens, align horizontally on larger screens
+        flexDirection: { xs: "column", md: "row" }, 
         alignItems: "center",
         justifyContent: "space-between",
         py: 6,
@@ -25,12 +24,12 @@ const HeroSection = ({ inView, darkMode }) => {
         <Box
           sx={{
             flex: 1,
-            textAlign: { xs: "center", md: "left" }, // Center text on mobile, left-align on larger screens
+            textAlign: { xs: "center", md: "left" },
             ml: { md: 4, xs: 0 },
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            mb: { xs: 4, md: 0 }, // Added margin-bottom for mobile
+            mb: { xs: 4, md: 0 },
           }}
         >
           <Typography
@@ -38,7 +37,7 @@ const HeroSection = ({ inView, darkMode }) => {
             sx={{
               fontWeight: "bold",
               mb: 2,
-              fontSize: { xs: "2.2rem", md: "2.5rem" }, // Slightly larger font size on mobile
+              fontSize: { xs: "2.2rem", md: "2.5rem" },
               lineHeight: 1.4,
               letterSpacing: 0.5,
             }}
@@ -106,22 +105,23 @@ const HeroSection = ({ inView, darkMode }) => {
           sx={{
             flex: 1,
             display: "flex",
-            justifyContent: "center", // Ensures the image is centered horizontally
+            justifyContent: "center", 
             alignItems: "center",
-            mt: { xs: 4, md: 0 }, // Add top margin on mobile for spacing
+            mt: { xs: 4, md: 0 },
             opacity: 0,
-            animation: "fadeIn 1.5s forwards", // Custom animation for the image
+            animation: "fadeIn 1.5s forwards",
           }}
         >
           <img
-            src="src/assets/hero.png" // Replace with your image URL
+            src="src/assets/hero.png"
             alt="Hero Image"
             style={{
+              width: "95%", 
+              height: "auto", 
               maxWidth: "100%",
-              height: "auto",
               borderRadius: "8px",
-              transform: "translateX(-30px)", // Slight animation effect for the image
-              animation: "moveIn 1.5s ease-out forwards", // Custom move-in animation
+              transform: "translateX(0)",
+              animation: "moveIn 1.5s ease-out forwards",
             }}
           />
         </Box>

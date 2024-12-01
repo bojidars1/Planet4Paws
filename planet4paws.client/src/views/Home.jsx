@@ -1,23 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  AppBar,
-  Toolbar,
   Typography,
-  Button,
   IconButton,
   Box,
   Container,
   CssBaseline,
   Grid2,
-  Fade,
-  Grow,
-  Slide,
 } from "@mui/material";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-import StarIcon from "@mui/icons-material/Star";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -26,6 +17,7 @@ import { lightTheme, darkTheme } from '../components/theme/theme';
 import Navbar from '../components/home/Navbar';
 import HeroSection from '../components/home/HeroSection';
 import FeaturesSection from '../components/home/FeaturesSection';
+import ReviewsSection from "../components/home/ReviewsSection";
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -93,64 +85,7 @@ const Home = () => {
         <FeaturesSection inView={inView} darkMode={darkMode} />
 
         {/* Reviews Section */}
-        <Box sx={{ py: 6, backgroundColor: darkMode ? "#1e1e1e" : "#f9f9f9" }} id="reviews">
-          <Container>
-            <Typography variant="h4" align="center" sx={{ mb: 4, fontSize: "2rem" }}>
-              Какво казват клиентите
-            </Typography>
-            <Grid2 container spacing={4} justifyContent="center">
-              {[
-                {
-                  name: "Иван Петров",
-                  review:
-                    "Уникално приложение! Помогна ми да организирам грижата за моето куче.",
-                  rating: 5,
-                },
-                {
-                  name: "Мария Георгиева",
-                  review: "Полезни съвети и лесно за ползване. Препоръчвам!",
-                  rating: 4,
-                },
-                {
-                  name: "Николай Димитров",
-                  review:
-                    "Управлението на записи направи живота ми толкова по-лесен.",
-                  rating: 5,
-                },
-              ].map((review, index) => (
-                <Grid2 key={index} xs={12} sm={6} md={4} sx={{ textAlign: "center" }}>
-                  <Slide in={inView.reviews} direction="up" timeout={(index + 1) * 500}>
-                    <Box
-                      sx={{
-                        p: 3,
-                        borderRadius: 2,
-                        boxShadow: 3,
-                        backgroundColor: "background.paper",
-                      }}
-                    >
-                      <Typography variant="h6" sx={{ mb: 1, fontSize: "1.2rem" }}>
-                        {review.name}
-                      </Typography>
-                      <Typography
-                        variant="body2"
-                        sx={{ mb: 2, fontStyle: "italic", fontSize: "1rem" }}
-                      >
-                        "{review.review}"
-                      </Typography>
-                      <Box sx={{ color: "primary.main" }}>
-                        {Array(review.rating)
-                          .fill()
-                          .map((_, i) => (
-                            <StarIcon key={i} />
-                          ))}
-                      </Box>
-                    </Box>
-                  </Slide>
-                </Grid2>
-              ))}
-            </Grid2>
-          </Container>
-        </Box>
+        <ReviewsSection inView={inView} darkMode={darkMode} />
 
         {/* Footer */}
         <Box sx={{ py: 4, backgroundColor: darkMode ? "#121212" : "#e8e8e8" }}>

@@ -1,8 +1,9 @@
+import { Typography } from '@mui/material';
 import React from 'react';
 
 function App() {
     return (
-        <h1>Hello World!</h1>
+        <Typography>Hello World</Typography>
     );
 }
 

@@ -22,50 +22,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import "@fontsource/roboto";
+import { lightTheme, darkTheme } from '../components/theme/theme';
 
 const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [inView, setInView] = useState({});
-
-  const lightTheme = createTheme({
-    typography: {
-      fontFamily: "Roboto, Arial, sans-serif",
-    },
-    palette: {
-      mode: "light",
-      primary: {
-        main: "#4caf50",
-      },
-      background: {
-        default: "#f5f5f5",
-        paper: "#ffffff",
-      },
-      text: {
-        primary: "#000000",
-        secondary: "#333333",
-      },
-    },
-  });
-
-  const darkTheme = createTheme({
-    typography: {
-      fontFamily: "Roboto, Arial, sans-serif",
-    },
-    palette: {
-      mode: "dark",
-      primary: {
-        main: "#90caf9",
-      },
-      background: {
-        default: "#121212",
-        paper: "#1e1e1e",
-      },
-      text: {
-        primary: "#ffffff",
-        secondary: "#bbbbbb",
-      },
-    },
-  });
 
   const currentTheme = darkMode ? darkTheme : lightTheme;
 

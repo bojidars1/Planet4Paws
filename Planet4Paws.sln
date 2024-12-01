@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planet4Paws.Server", "Planet4Paws.Server\Planet4Paws.Server.csproj", "{04D990B8-003D-463E-AECC-CA7328F92C43}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "planet4paws.client", "planet4paws.client\planet4paws.client.esproj", "{EA1BEAD8-A083-422D-B16B-09DC41786FD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04D990B8-003D-463E-AECC-CA7328F92C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D990B8-003D-463E-AECC-CA7328F92C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D990B8-003D-463E-AECC-CA7328F92C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D990B8-003D-463E-AECC-CA7328F92C43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1BEAD8-A083-422D-B16B-09DC41786FD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1BEAD8-A083-422D-B16B-09DC41786FD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1BEAD8-A083-422D-B16B-09DC41786FD7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EA1BEAD8-A083-422D-B16B-09DC41786FD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1BEAD8-A083-422D-B16B-09DC41786FD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1BEAD8-A083-422D-B16B-09DC41786FD7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DDA5296-F796-4D6D-A74B-E7ED7F051CB2}
+	EndGlobalSection
+EndGlobal

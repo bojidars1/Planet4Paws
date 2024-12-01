@@ -1,0 +1,6 @@
+@Planet4Paws.Server_HostAddress = http://localhost:5269
+
+GET {{Planet4Paws.Server_HostAddress}}
+Accept: application/json
+
+###

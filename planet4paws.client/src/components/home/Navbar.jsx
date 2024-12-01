@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import { AppBar, Toolbar, Typography, IconButton, Button, Box, Drawer, List, ListItem, ListItemText, useMediaQuery, useTheme } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import MenuIcon from "@mui/icons-material/Menu";  // For the mobile menu icon
+import MenuIcon from "@mui/icons-material/Menu";
 
 import logo from "../../assets/logo.jpeg";
 
 const Navbar = ({ darkMode, handleThemeToggle }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // Check if the screen size is small (mobile)
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
-  // Toggle the mobile menu open or closed
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   return (
@@ -39,7 +38,6 @@ const Navbar = ({ darkMode, handleThemeToggle }) => {
               <MenuIcon />
             </IconButton>
           ) : (
-            // Action buttons for desktop
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Начало</Button>
               <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Влизане</Button>

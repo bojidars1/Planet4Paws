@@ -113,7 +113,7 @@ const HeroSection = ({ inView, darkMode }) => {
           }}
         >
           <img
-            src="src/assets/hero.png"
+            src="/hero.png"
             alt="Hero Image"
             style={{
               width: "95%", 

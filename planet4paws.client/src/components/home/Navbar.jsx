@@ -5,7 +5,7 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from 'react-router-dom';
 
-import logo from "/logo.jpeg";
+import logo from "/logo.png";
 
 const Navbar = ({ darkMode, handleThemeToggle }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

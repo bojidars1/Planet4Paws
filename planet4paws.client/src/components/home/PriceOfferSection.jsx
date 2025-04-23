@@ -72,13 +72,6 @@ const PriceOfferSection = () => {
                 Само за <strong>нови потребители</strong> при регистрация до{" "}
                 <strong>30.04.2025 г.</strong> за едно устройство.
               </Typography>
-              <Button
-                variant="contained"
-                color="primary"
-                sx={{ mt: 3, px: 4, borderRadius: "30px", textTransform: "none" }}
-              >
-                Регистрирай се
-              </Button>
             </Paper>
           </Grid>
         </Grid>

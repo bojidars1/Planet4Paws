@@ -51,22 +51,6 @@ const AboutSection = ({ darkMode, inView }) => {
                   технологиите, бизнеса и грижата за домашни любимци. Нашата цел е да създаваме
                   софтуерни решения с реална стойност и практическо приложение.
                 </Typography>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  sx={{
-                    borderRadius: "30px",
-                    px: 4,
-                    py: 1.5,
-                    textTransform: "none",
-                    boxShadow: 3,
-                    mb: 2,
-                  }}
-                  href="mailto:sovasoftnfsg@gmail.com"
-                >
-                  Свържете се с нас и получете специална цена!
-                </Button>
               </Box>
             </Fade>
           </Grid>

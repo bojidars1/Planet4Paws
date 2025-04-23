@@ -65,7 +65,7 @@ const HeroSection = ({ inView, darkMode }) => {
               color: darkMode ? "#bbbbbb" : "#555555",
             }}
           >
-            Очаквайте скоро в App Store и Google Play.
+            Открийте ни в App Store и Google Play.
           </Typography>
           <Box
             sx={{

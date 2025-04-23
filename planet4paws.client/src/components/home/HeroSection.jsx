@@ -7,7 +7,7 @@ const HeroSection = ({ inView, darkMode }) => {
       id="hero"
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", md: "row" }, 
+        flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         justifyContent: "space-between",
         py: 6,
@@ -52,9 +52,60 @@ const HeroSection = ({ inView, darkMode }) => {
               color: darkMode ? "#bbbbbb" : "#555555",
             }}
           >
-            Лесно за ползване, полезни съвети и всичко нужно за вашия домашен
-            любимец – на едно място.
+            <strong>Planet4Paws</strong> е мобилно приложение, което обединява всичко необходимо за здравето и
+            грижата за домашния любимец. Персонализирани съвети, напомняния, здравен дневник
+            и бърза връзка с ветеринар – всичко в едно място за спокойствието на стопаните и
+            доброто състояние на техните любимци.
           </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              mb: 2,
+              fontSize: { xs: "1rem", md: "1.2rem" },
+              color: darkMode ? "#bbbbbb" : "#555555",
+            }}
+          >
+            Очаквайте скоро в App Store и Google Play.
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2,
+              flexWrap: "wrap",
+              justifyContent: { xs: "center", md: "flex-start" },
+              mb: 4,
+            }}
+          >
+            <Button
+              component="a"
+              disabled
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ p: 0, minWidth: "unset" }}
+            >
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+                style={{ height: 40 }}
+              />
+            </Button>
+            <Button
+              component="a"
+              disabled
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ p: 0, minWidth: "unset" }}
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+                style={{ height: 40 }}
+              />
+            </Button>
+          </Box>
+
           <Box sx={{ display: "flex", justifyContent: { xs: "center", md: "flex-start" } }}>
             <Button
               variant="contained"
@@ -105,7 +156,7 @@ const HeroSection = ({ inView, darkMode }) => {
           sx={{
             flex: 1,
             display: "flex",
-            justifyContent: "center", 
+            justifyContent: "center",
             alignItems: "center",
             mt: { xs: 4, md: 0 },
             opacity: 0,
@@ -116,8 +167,8 @@ const HeroSection = ({ inView, darkMode }) => {
             src="/hero.png"
             alt="Hero Image"
             style={{
-              width: "95%", 
-              height: "auto", 
+              width: "95%",
+              height: "auto",
               maxWidth: "100%",
               borderRadius: "8px",
               transform: "translateX(0)",

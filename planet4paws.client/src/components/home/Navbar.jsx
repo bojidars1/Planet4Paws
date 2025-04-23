@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, IconButton, Button, Box, Drawer, List, Lis
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from 'react-router-dom';
 
 import logo from "/logo.jpeg";
 
@@ -39,7 +40,7 @@ const Navbar = ({ darkMode, handleThemeToggle }) => {
             </IconButton>
           ) : (
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Начало</Button>
+              <Button color="inherit" component={Link} to="/" sx={{ mr: 2, fontSize: '1em' }}>Начало</Button>
               <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Влизане</Button>
               <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Регистрация</Button>
               

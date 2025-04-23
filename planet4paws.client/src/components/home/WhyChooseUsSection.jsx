@@ -81,7 +81,7 @@ const WhyChooseSection = ({ inView, darkMode }) => {
                   }}
                 >
                   <CardContent>
-                    <Box sx={{ mb: 2, color: darkMode ? "#90caf9" : "#4caf50" }}>
+                    <Box sx={{ mb: 2, color: "primary.main" }}>
                       {item.icon}
                     </Box>
                     <Typography variant="h6" sx={{ fontWeight: 600, mb: 1 }}>
@@ -122,7 +122,7 @@ const WhyChooseSection = ({ inView, darkMode }) => {
           >
             {listItems.map((text, index) => (
               <ListItem key={index} disableGutters>
-                <ListItemIcon sx={{ color: darkMode ? "#90caf9" : "#4caf50", minWidth: 36 }}>
+                <ListItemIcon sx={{ color: "primary.main", minWidth: 36 }}>
                   <CheckCircleIcon />
                 </ListItemIcon>
                 <ListItemText primary={text} />

@@ -5,6 +5,7 @@ import FeaturesSection from '../components/home/FeaturesSection';
 import ReviewsSection from "../components/home/ReviewsSection";
 import WhyChooseUsSection from "../components/home/WhyChooseUsSection";
 import AboutUsSection from "../components/home/AboutUsSection";
+import PriceOfferSection from "../components/home/PriceOfferSection";
 
 const Home = ({ darkMode, setDarkMode }) => {
   const [inView, setInView] = useState({});
@@ -22,7 +23,7 @@ const Home = ({ darkMode, setDarkMode }) => {
   };
 
   useEffect(() => {
-    const sections = ["hero", "features", "reviews", "whyChoose", "about"];
+    const sections = ["hero", "features", "reviews", "whyChoose", "about", "pricing"];
     const observers = {};
 
     sections.forEach((id) => {
@@ -53,6 +54,7 @@ const Home = ({ darkMode, setDarkMode }) => {
       <HeroSection inView={inView} darkMode={darkMode} />
       <FeaturesSection inView={inView} darkMode={darkMode} />
       <WhyChooseUsSection inView={inView} darkMode={darkMode} />
+      <PriceOfferSection />
       <AboutUsSection inView={inView} darkMode={darkMode} />
       <ReviewsSection inView={inView} darkMode={darkMode} />
       

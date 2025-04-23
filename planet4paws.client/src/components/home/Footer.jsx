@@ -10,12 +10,23 @@ const Footer = ({ darkMode }) => {
         <Grid2 container spacing={2} alignItems="center" justifyContent="center">
           {/* Text + Socials */}
           <Grid2 xs={12} sm={6} sx={{ textAlign: "center" }}>
+            <Box sx={{ display: "flex", justifyContent: "center", mb: 1 }}>
+              <img
+                src="/sovasoft-logo.jpeg"
+                alt="SovaSoft Logo"
+                style={{
+                  height: 50,
+                  objectFit: "contain",
+                  filter: darkMode ? "brightness(0.85)" : "none",
+                }}
+              />
+            </Box>
             <Typography variant="body2" sx={{ fontSize: "1rem", mb: 1 }}>
               © 2025 SovaSoft Ltd. All rights reserved.
             </Typography>
 
             {/* Privacy Policy Link */}
-            <Typography variant="body2" sx={{ mt: 1 }}>
+            <Typography variant="body2" sx={{ mt: 1, fontSize: "1.1em" }}>
               <Link
                 to="/privacy-policy"
                 style={{

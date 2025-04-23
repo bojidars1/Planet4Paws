@@ -6,15 +6,16 @@ const DisclaimerBanner = ({ darkMode }) => {
   return (
     <Box
       sx={{
-        position: "sticky",
-        top: 0,
+        position: "fixed",
+        bottom: 0,
+        left: 0,
         width: "100%",
         zIndex: 1200,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         px: 2,
-        py: 1,
+        py: 1.2,
         bgcolor: darkMode ? "#2e2e2e" : "white",
         color: darkMode ? "#ffcc80" : "#5d4037",
         borderBottom: darkMode ? "1px solid #444" : "1px solid #e0c8aa",

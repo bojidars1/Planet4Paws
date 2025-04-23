@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, handleThemeToggle }) => {
 
   return (
     <>
-      <AppBar position="static" color="primary">
+      <AppBar position="sticky" color="primary">
         <Toolbar>
           {/* Logo section */}
           <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>

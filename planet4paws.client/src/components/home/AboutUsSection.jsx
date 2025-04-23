@@ -32,6 +32,16 @@ const AboutSection = ({ darkMode, inView }) => {
           <Grid item xs={12} md={6}>
             <Fade in={inView?.about} timeout={1200}>
               <Box>
+                <img
+                  src="/sovasoft-logo.jpeg"
+                  alt="SovaSoft Logo"
+                  style={{
+                    height: 50,
+                    marginRight: 12,
+                    objectFit: "contain",
+                    filter: darkMode ? "brightness(0.9)" : "none",
+                  }}
+                />
                 <Typography variant="h6" sx={{ mb: 2, color: darkMode ? "#bbbbbb" : "#555555" }}>
                   <strong>SovaSoft ООД</strong><br />
                   Учебно предприятие към Националната финансово-стопанска гимназия, гр. София.

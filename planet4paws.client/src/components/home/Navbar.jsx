@@ -41,8 +41,6 @@ const Navbar = ({ darkMode, handleThemeToggle }) => {
           ) : (
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Button color="inherit" component={Link} to="/" sx={{ mr: 2, fontSize: '1em' }}>Начало</Button>
-              <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Влизане</Button>
-              <Button color="inherit" sx={{ mr: 2, fontSize: '1em' }}>Регистрация</Button>
               
               {/* Theme Toggle Button */}
               <IconButton
@@ -75,12 +73,6 @@ const Navbar = ({ darkMode, handleThemeToggle }) => {
           <ListItemButton component={Link} to="/">
             <ListItemText primary="Начало" />
           </ListItemButton>
-          <ListItem>
-            <ListItemText primary="Влизане" />
-          </ListItem>
-          <ListItem>
-            <ListItemText primary="Регистрация" />
-          </ListItem>
           <ListItem onClick={handleThemeToggle}>
             <ListItemText primary={darkMode ? 'Light Mode' : 'Dark Mode'} />
           </ListItem>

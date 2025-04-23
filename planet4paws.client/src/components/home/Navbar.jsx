@@ -73,7 +73,7 @@ const Navbar = ({ darkMode, handleThemeToggle }) => {
       >
         <List>
           <ListItem>
-            <ListItemText primary="Начало" />
+            <ListItemText primary="Начало" component={Link} to="/" />
           </ListItem>
           <ListItem>
             <ListItemText primary="Влизане" />
